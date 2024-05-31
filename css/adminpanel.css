@@ -1,0 +1,356 @@
+
+body::-webkit-scrollbar {
+    display: none;
+}
+.panal-container {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.panal {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 10px;
+}
+.panal .said-bar {
+    height: 100%;
+    width: 300px;
+    background-color: #7757B2;
+    overflow: hidden;
+    padding-top: 30px;
+    transition: ease-in-out 0.3s;
+
+}
+.panal .said-bar  h2 {
+    color: #7757B2;
+    margin: 20px ;
+    /*border-bottom: 2px #7757B2 solid;*/
+    border-style: none;
+}
+.panal .said-bar  h2 i {
+   float: right;
+}
+.panal .said-bar ul {
+    display: grid;
+    width: 100%;
+    color: #37474F;
+    font-size: 18px;
+    list-style: none;
+    margin-top: 20px;
+}
+.panal .said-bar ul li{
+    padding: 10px;
+    display: grid;
+    cursor: pointer;
+}
+.panal .said-bar ul li label {
+    cursor: pointer;
+    background-color: #eeeeee;
+    padding: 18px;
+    color: #7757B2;
+    text-align: start;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.panal .said-bar ul li label i {
+    margin: 10px auto;
+    color: #7757B2;
+    float: right;
+
+}
+.panal .said-bar ul li ul {
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    font-size: 18px;
+    position: relative;
+    display: none;
+    transition: 0.8s ease;
+
+}
+.panal .said-bar ul li ul li {
+    border-radius: 5px;
+    background-color: white;
+    color: #7757B2;
+    transition: 0.3s ease;
+}
+.panal .said-bar ul li ul li:hover {
+    background-color: #eeeeee;
+    transition: 0.3s ease;
+    color: #7757B2;
+    padding-left: 40px;
+
+  }
+
+
+.panal .main-bar {
+    height: 100%;
+    width:auto;
+    padding: 0px;
+    transition: ease-in-out 0.3s;
+    background:#855ac5;
+
+}
+
+.panal .main-bar .articles,
+.panal .main-bar .events,
+.panal .main-bar .coures,
+.panal .main-bar .user,
+.del-article-main,
+.del-event-main,
+.del-coures-main,
+.del-user-main,
+.up-article-main,
+.up-event-main,
+.up-course-main,
+.up-user-main {
+    width:100%;
+    margin: auto;
+    display: none;
+}
+.panal .main-bar .articles  h3,
+.panal .main-bar .events  h3,
+.panal .main-bar .coures h3,
+.panal .main-bar .user h3 {
+    width: 70%;
+    margin-left: 80px;
+    text-align: start;
+    color: #00C72F;
+    padding-bottom: 10px;
+    border-bottom: 2px #00C72F solid;
+}
+.panal .main-bar .articles form,
+.panal .main-bar .events form,
+.panal .main-bar .coures form,
+.panal .main-bar .user form {
+    display: grid;
+    width: 80%;
+    margin: 30px auto;
+    height: auto;
+}
+.panal .main-bar .articles form label ,
+.panal .main-bar .events form label,
+.panal .main-bar .coures form label,
+.panal .main-bar .user form label {
+    margin-bottom: 7px;
+    font-size: 20px;
+    color: #7757B2;
+}
+.panal .main-bar .articles form input,
+.panal .main-bar .events form input ,
+.panal .main-bar .coures form input,select ,.dis ,
+.panal .main-bar .user form input  {
+    font-size: 17px;
+    color: #7757B2;
+    width: 80%;
+    height: 35px;
+    background:none;
+    border-radius: 5px;
+    border: 2px solid #7757B2;
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+.panal .main-bar .coures form .dis {
+    height: 200px;
+}
+.panal .main-bar .articles form  .but,
+.panal .main-bar .events form .but ,
+.panal .main-bar .coures form .but ,
+.panal .main-bar .user form .but  {
+    background-color: #7757B2;
+    color: #eeeeee;
+    width: 150px;
+}
+
+.articles-boxs,
+.events-boxs {
+    width: auto;
+    height:auto;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+}
+.articles-boxs .box,
+.events-boxs .box {
+    width: 250px;
+    height:250px;
+    background-color: white;
+    margin: auto;
+    padding: 0;
+    border:4px solid white;
+    transition: 0.1s ease;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.articles-boxs .box:hover,
+.events-boxs .box:hover  {
+    transition: 0.2s ease;
+    border: 4px solid #7757B2;
+
+}
+
+.articles-boxs .box .box-cover img,
+.events-boxs .box .box-cover img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.events-boxs img  {
+    width: 250px;
+}
+
+.articles-boxs .box .box-cover .title,
+.events-boxs .box .box-cover .title {
+    color: #7757B2;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 10px ;
+
+
+}
+.articles-boxs .box .href,
+.events-boxs .box .href {
+    text-decoration: none;
+}
+.articles-boxs .box .box-cover .but-delete,
+.events-boxs .box .box-cover .but-delete,
+.events-boxs .box .box-cover .but-delete {
+    background: #cb0000;
+    width: 30%;
+    height: 30px;
+    border-style: none;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    text-align: center;
+    align-content: center;
+}
+
+.articles-boxs .box .box-cover .but-up {
+    background: #03b22b;
+    width: 40%;
+    height: 30px;
+    margin: auto;
+    border-style: none;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+.articles-boxs .box .box-cover .but-up i {
+    margin: auto;
+    color: white;
+}
+.articles-boxs .box .box-cover .delete-but:hover,
+.events-boxs .box .box-cover .delete-but:hover {
+    background: #a90303;
+}
+
+.articles-boxs .box .box-cover .but-up:hover {
+    background: #03b22b;
+}
+
+.panal .main-bar .coures form {
+
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    background:none;
+}
+
+
+.panal .main-bar .coures .lesson-fields {
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h2 {
+    border-bottom: 3px solid #00C72F;
+    color: #00C72F;
+    margin: 0px 0 50px 0;
+
+}
+
+
+table {
+    width: 85%;
+    margin: 30px  auto;
+    border-collapse: collapse;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+table tr .title {
+    font-weight: bold;
+    color: white;
+    background-color: #7757B2;
+    padding-left: 30px;
+    height: 40px;
+
+}
+
+table  td {
+    text-align: left;
+    height: 50px;
+    color: #4d5b60;
+    padding-left: 30px;
+
+}
+table  td button {
+    width: auto;
+    border-style: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+table  td  .delete-but {
+    background-color: #cb0000;
+}
+table  td  .edit-but {
+    padding: 3px;
+    background-color: #00C72F;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none; /* إزالة الخط الأسفل من الرابط */
+    transition: 0.2s ease;
+}
+table  td  .edit-but:hover {
+    background-color: #7757B2;
+    color: #eeeeee;
+    transition: 0.3s ease;
+}
+
+
+table tbody tr:nth-child(odd) {
+    background-color: #f5f5f5;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: white;
+}
+

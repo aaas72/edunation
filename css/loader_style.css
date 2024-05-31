@@ -1,0 +1,31 @@
+body {
+    background-color: #eeeeee;
+}
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+.loader{
+    display: block;
+    position: relative;
+    height: 30px;
+    width: 160px;
+    background-image:
+            linear-gradient(#7757b2 30px, transparent 0),
+            linear-gradient(#7757b2 30px, transparent 0),
+            linear-gradient(#7757b2 30px, transparent 0),
+            linear-gradient(#7757b2 30px, transparent 0);
+    background-repeat: no-repeat;
+    background-size: 30px auto;
+    background-position: 0 0, 40px 0, 80px 0, 120px 0;
+    animation: pgfill 1s linear infinite;
+}
+@keyframes pgfill {
+    0% {   background-image: linear-gradient(#7757b2 30px, transparent 0), linear-gradient(#7757b2 30px, transparent 0), linear-gradient(#7757b2 30px, transparent 0), linear-gradient(#7757b2 30px, transparent 0); }
+    25% {   background-image: linear-gradient(#00fd0d 30px, transparent 0), linear-gradient(#7757b2 30px, transparent 0), linear-gradient(#7757b2 30px, transparent 0), linear-gradient(#7757b2 30px, transparent 0); }
+    50% {   background-image: linear-gradient(#7757b2 30px, transparent 0), linear-gradient(#00fd0d 30px, transparent 0), linear-gradient(#7757b2 30px, transparent 0), linear-gradient(#7757b2 30px, transparent 0); }
+    75% {   background-image: linear-gradient(#7757b2 30px, transparent 0), linear-gradient(#7757b2 30px, transparent 0), linear-gradient(#00fd0d 30px, transparent 0), linear-gradient(#7757b2 30px, transparent 0); }
+    100% {   background-image: linear-gradient(#7757b2 30px, transparent 0), linear-gradient(#7757b2 30px, transparent 0), linear-gradient(#7757b2 30px, transparent 0), linear-gradient(#00fd0d 30px, transparent 0); }
+}

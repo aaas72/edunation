@@ -1,0 +1,91 @@
+* {
+    text-decoration: none;
+
+}
+
+.cuntactus-head {
+    width: 100%;
+    height: 360px;
+    background-color: #855ac5;
+
+}
+.cuntactus-head .text .title {
+    width: 60%;
+    margin: auto    ;
+    color: #eeeeee;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    transform: translateY(100px);
+}
+.cuntactus-head .text .par {
+    width: 70%;
+    margin: 10px auto 0 auto    ;
+    color: #eeeeee;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    transform: translateY(110px);
+}
+
+.form-body {
+    display: block;
+    width: 500px;
+    height: 600px;
+    margin: auto;
+    background-color: white;
+    padding: 40px;
+    transform: translateY(-130px);
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+
+}
+
+.form-body label {
+    font-size: 20px;
+    color: #7757B2;
+
+}
+.form-body input {
+    width: 100%;
+    height: 60px;
+    margin: 10px auto 30px auto;
+    border: 2px solid #7757B2;
+    font-size: 20px;
+    color: #706462;
+    border-radius: 5px;
+
+}
+.form-body .but {
+    background: none;
+}
+.form-body .but:hover {
+    background: #7757B2;
+    transition: 0.3s ease;
+    color: #eeeeee;
+    font-weight: bold;
+}
+.form-body .mas {
+    width: 100%;
+    height: 200px;
+
+}
+.footer-contact {
+    background-color: #7757B2;
+    width: 100%;
+    height: 50px;
+}
+.footer-contact p {
+    text-align: center;
+
+    padding: 20px 0 0 0;
+    color: #eeeeee;
+}
+
+
+
+
+
+

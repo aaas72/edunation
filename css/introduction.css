@@ -1,0 +1,223 @@
+.container-head-articles {
+    width: 1440px;
+    margin: auto;
+}
+body {
+    background: white;
+}
+.intro-head {
+    background: linear-gradient(to right, #7757B2, #00C72F);
+    width: 100%;
+    height: 300px;
+
+}
+.intro-head .text {
+    text-transform: uppercase;
+    text-align: start;
+    width: 50%;
+    transform: translate(100px, 100px);
+}
+.intro-head .text p {
+    color: #eeeeee;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.5;
+
+}
+.bg {
+    width: 120%;
+    height: 400px;
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #7757b2 50%, #03b22b 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position: absolute;
+    right:-50%;
+    top:0;
+    z-index:-1;
+}
+.bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+}
+.bg3 {
+    animation-duration:5s;
+}
+
+.content {
+    background-color: rgb(0, 253, 13);
+    border-radius:.25em;
+    box-shadow:0 0 .25em rgba(0, 0, 0, 0.75);
+    box-sizing:border-box;
+    left:80%;
+    padding:10vmin;
+    position:fixed;
+    text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%);
+}
+@keyframes slide {
+    0% {
+        transform:translateX(-25%);
+    }
+    100% {
+        transform:translateX(25%);
+    }
+}
+.body-introduction {
+    width: 100%;
+    height: 700px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.body-introduction .left-bar {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+.body-introduction .right-bar {
+    width: 100%;
+    height: 100%;
+}
+.body-introduction .right-bar .card {
+    width: 350px;
+    height: 450px;
+    background-color: #eeeeee;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(60%, -50%);
+    z-index: 1;
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+    border: 8px solid white;
+
+}
+.body-introduction .right-bar .card .img {
+    width: 100%;
+    height: 200px;
+    background-color: #00C72F;
+}
+.body-introduction .right-bar .card .img img {
+    width: 100%;
+    height: 200px;
+    background-color: #00C72F;
+}
+.body-introduction .right-bar .card .title {
+    width: 100%;
+    margin: 50px 0;
+    text-align: center;
+    font-size: 20px;
+    color: #eeeeee;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: linear-gradient(to right, #7757B2, #00C72F);
+    height: 50px;
+    line-height: 50px;
+
+
+}
+
+.body-introduction .right-bar .card .but {
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+    width: auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    background: #7757B2;
+    border-radius: 5px;
+
+
+}
+.body-introduction .right-bar .card .but:hover,
+.body-introduction .left-bar .read-more:hover{
+    background-color: #00C72F;
+    color: #eeeeee;
+    transition: 0.2s ease ;
+}
+
+
+.body-introduction .left-bar .dis {
+    width: 100%;
+    height: auto;
+
+}
+.body-introduction .left-bar .dis .title,
+.what .title {
+    color: #00C72F;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 100px 0 0 0;
+    line-height: 1.5;
+}
+.body-introduction .left-bar .dis .par,
+.what .par {
+    font-size: 20px;
+    color: #37474F;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.body-introduction .left-bar .techer {
+    width: 420px;
+    height: auto;
+    margin: 100px auto 100px auto;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+    line-height: 1.5;
+
+}
+.body-introduction .left-bar .techer  .img {
+    width: 200px;
+    height: 200px;
+    margin: 40px auto;
+    border-radius: 50%;
+    background-color: #eeeeee;
+    border: 2px solid #7757B2;
+
+}
+.body-introduction .left-bar .techer  .info {
+    text-align: center;
+}
+.body-introduction .left-bar .techer  .info .name {
+    color: #00C72F;
+    margin: 40px 0 20px 0;
+    font-size: 25px;
+}
+.body-introduction .left-bar .techer  .info .par {
+    width: 80%;
+    margin: auto;
+    color: #7757B2;
+    font-weight: normal;
+    font-size: 25px;
+}
+.body-introduction .left-bar .techer  .dis {
+    width: 80%;
+    margin: 30px auto;
+    color: #37474F;
+    font-size: 18px;
+    text-align: start;
+}
+.body-introduction .left-bar .footer-info {
+    width: 100%;
+    height: 30px;
+    color: #7757B2;
+    font-weight: bold;
+}
+a {
+
+    text-decoration: none;
+}
+a:hover {
+    color: white;
+    transition: 0.3s ease;
+}
+
+

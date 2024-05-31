@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kullanıcı grişi</title>
+    <link rel="stylesheet" href="../../css/signuppage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="signup-form">
+
+    <div class="side-bar">
+        <h2>EduTation</h2>
+        <p>Seviye atlamanıza yardımcı olmak için buradayız</p>
+    </div>
+    <form action="../../php/signup_process.php" method="post">
+        <h2>Hesap oluşturmak</h2>
+        <label>
+            <input type="text" id="email" name="name" placeholder="Adı soyadı" required>
+        </label>
+        <label>
+            <input type="email" id="email" name="email" placeholder="E-posta" required>
+            <?php
+            session_start();
+            if (isset($_SESSION['email_error'])) {
+                echo '<div class="error">' . $_SESSION['email_error'] . '</div>';
+                unset($_SESSION['email_error']); // مسح رسالة الخطأ بعد عرضها
+            }
+            ?>
+        </label>
+        <label>
+            <input type="password" id="password" name="password" placeholder="Şifre" required>
+            <?php
+            if (isset($_SESSION['password_error'])) {
+                echo '<div class="error">' . $_SESSION['password_error'] . '</div>';
+                unset($_SESSION['password_error']); // مسح رسالة الخطأ بعد عرضها
+            }
+            ?>
+        </label>
+        <input id="login-button" class="but" type="submit" name="submit" value="Giriş Yap">
+            <h1 class="signup">Hesabın  var mı ? <a id="login-button" href="loginpage.php" style="color: #00C72F; cursor: pointer">Oturma aç</a></h1>
+        </form>
+</div>
+
+<script src="../../js/login_setion.js"></script>
+</body>
+</html>

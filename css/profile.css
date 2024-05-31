@@ -1,0 +1,205 @@
+body {
+
+}
+.container {
+    width: 60%;
+    margin: auto;
+    padding-top: 50px;
+
+}
+.title {
+    width: 100%;
+    border-bottom: 4px #00C72F solid;
+    color: #7757B2;
+    padding-bottom: 10px;
+}
+.acc-info {
+    margin: 30px 0 0 0 ;
+
+}
+.acc-info  h2 {
+    color: #00C72F;
+}
+.acc-info form {
+    width: 100%;
+    display: grid;
+    margin: 30px 0 0 0 ;
+}
+.acc-info form label {
+    font-size: 18px;
+    color: #4d5b60;
+    padding:  15px 0 5px 0;
+    border-top: 2px #d0d0d0 solid;
+}
+
+
+.acc-info form input,
+.acc-info form select {
+    width: 40%;
+    height: 40px;
+    margin: 0 0 20px 0;
+    background: none;
+    border-radius: 5px;
+    border: 2px solid #7757B2;
+    font-size: 18px;
+    color: #37474F;
+    padding: 0 0 0 10px ;
+
+}
+.acc-info form .button {
+    background-color: #7757B2;
+    color: #eeeeee;
+    width: 200px;
+    text-align: center;
+    margin: 30px 0 50px 700px ;
+    border-style: none;
+    cursor: pointer;
+}
+.acc-info form .button:hover {
+    background-color: #00C72F;
+    transition: 0.2s ease;
+}
+
+.acc-info .title-2 {
+    margin: 50px 0 0 0;
+}
+.acc-info form p {
+    font-size: 20px;
+    color: #a90303;
+}
+.acc-info form .button-delete {
+    background-color: #a90303;
+    color: #eeeeee;
+    width: 200px;
+    text-align: center;
+    margin: 30px 0 100px 700px ;
+    border-style: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+footer {
+    width: 100%;
+    height:auto;
+    background-color: #7757B2;
+    position: relative;
+}
+footer .main{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-rows: 90% auto;
+}
+footer .main .top-footer {
+    width: 100%;
+    height: auto;
+    display: grid;
+    padding: 50px 0 0 0;
+    border-bottom: 1px solid #eeeeee;
+}
+footer .main .top-footer .footer-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    text-align: left;
+}
+footer .main.top-footer .footer-list .logo {
+    width: 100%;
+    text-align: start;
+    padding: 0 0 0 0;
+}
+footer .main  .top-footer .footer-list,
+.logo h1 ,
+.support h1,
+.partners h1,
+.follwo-us h1 {
+    color: white;
+    font-size: 18px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+footer .main .top-footer .footer-list .logo p {
+    color: #d9d9d9;
+    margin:  10px 0 0 0;
+    font-size: 13px;
+    font-weight: unset;
+    width: 80%;
+}
+footer .main .top-footer .footer-list .logo .list {
+    list-style: none;
+    margin: 20px 0 40px 0 ;
+    color: #dcdcdc;
+    display: block;
+}
+footer .main .top-footer .footer-list .logo .list li {
+    margin: 20px 0 0 10px ;
+    color: #dcdcdc;
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+footer .main  .top-footer .footer-list .logo .list li:hover {
+    background-color: #eeeeee;
+    color: #7757B2;
+    transition: 0.2s ease;
+}
+footer .main .top-footer .footer-list .support button {
+    width: 150px;
+    height: 40px;
+    margin: 20px 0 0 0;
+    background: none;
+    color: white;
+    border: 2px solid white ;
+    border-radius: 5px;
+    font-size: 15px;
+}
+footer .main  .top-footer .footer-list .support button:hover {
+    background-color: #eeeeee;
+    color: #7757B2;
+    transition: 0.2s ease;
+    font-weight: bold;
+}
+footer .main  .top-footer .footer-list .partners .list {
+    list-style: none;
+    margin: 20px 0 0 0 ;
+    color: #dcdcdc;
+}
+footer .main  .top-footer .footer-list .partners .list li {
+    margin: 10px 0 0 0 ;
+}
+footer .main  .top-footer .footer-list .follwo-us .list {
+    list-style: none;
+    margin: 20px 0 10px 0 ;
+    color: #dcdcdc;
+    display: flex;
+}
+footer .main  .top-footer .footer-list .follwo-us .list li   {
+    margin: 0 0 0 10px ;
+    color: #dcdcdc;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #eeeeee;
+    border-radius: 5px;
+}
+footer .main  .top-footer .footer-list .follwo-us .list li:hover {
+    background-color: #eeeeee;
+    color: #7757B2;
+    transition: 0.2s ease;
+}
+footer .main .bot-footer    {
+    width: 100%;
+    height: auto;
+}
+footer .main .bot-footer p {
+    color: #eeeeee;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+}

@@ -1,0 +1,294 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.container-footer {
+    width: 1440px;
+    height: auto;
+    margin: auto;
+}
+body {
+    font-family: Josefin Sans, serif;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+
+}
+.container-navbar,
+.account    {
+    width: 1340px;
+    height: 70px;
+    margin: auto;
+}
+.navbar {
+    width: 100%;
+    padding: 0;
+    background-color: white;
+    border-bottom: 1px solid whitesmoke;
+}
+.navbar .nav-row {
+    padding: 15px 0 0 0;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    color: #7757B2;
+}
+.navbar .nav-row .logo {
+    display: flex;
+    list-style: none;
+}
+.navbar .nav-row .logo li {
+    color: #7757B2;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+}
+.navbar .nav-row .list {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    color: white;
+}
+.navbar .nav-row .list li {
+    margin: 10px 20px 0 20px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease;
+    color: white;
+}
+.navbar .nav-row .list li:hover {
+    cursor: pointer;
+    color: #00C72F;
+}
+
+.navbar .nav-row .list li a  {
+    font-size: 22px;
+    color: #7757B2;
+    transition: 0.1s ease;
+}
+.navbar .nav-row .list li a:hover {
+    color: #00C72F;
+}
+.navbar .nav-row .buttons {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.navbar .nav-row button {
+    font-size: 15px;
+    background: none;
+    border: 2px solid #7757B2;
+    width: 100px;
+    height: 40px;
+    color: #7757B2;
+    font-weight: bold;
+    margin-left: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-align: center;
+}
+.navbar .nav-row .buttons li button:hover {
+    background-color: #7757B2;
+    color: white;
+}
+
+.navbar .nav-row .acc {
+    display: block;
+    justify-content: center;
+    list-style: none;
+    border: 2px solid #7757B2;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin:  auto 20px;
+    transition:  0.3s ease;
+}
+.navbar .nav-row .acc:hover {
+    background: #7757B2;
+    transition:  0.3s ease;
+    color: white;
+
+}
+.navbar .nav-row .acc i {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    color: #7757B2;
+    margin: auto;
+    padding-top: 7px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+.navbar .nav-row .acc i:hover {
+    color: white;
+    transition: 0.3s ease;
+}
+
+.account {
+    display: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* ظل للعنصر */
+    width:  250px;
+    position: fixed;
+    z-index: 999;
+    right: 100px;
+    top: 70px;
+    transition: transform 0.9s ease; /* تأثير التحول خلال 0.5 ثانية */
+    height: auto;
+    border-radius: 10px;
+}
+.account .personel-info {
+    background-color: white;
+    border-radius: 7px;
+    list-style: none;
+    width: 100%;
+    height: auto;
+}
+.account .personel-info li {
+    width:auto;
+    height: 30px;
+    padding: 20px 0 0 30px;
+    color: #706462;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-radius: 7px;
+}
+.account .personel-info li:hover {
+    background-color: #eeeeee;
+    color:#706462;
+    transition: 0.3s ease;
+    padding: 20px 0 0 50px;
+
+}
+.account .personel-info li i {
+    transition: 0.3s ease;
+    margin-right: 10px;
+}
+
+
+footer {
+    width: 100%;
+    height:100%;
+    background-color: #eeeeee;
+    position: relative;
+}
+footer .main{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-rows: 90% auto;
+}
+footer .main .top-footer {
+    width: 100%;
+    height: auto;
+    display: grid;
+    padding: 30px 0 0 0;
+    border-bottom: 1px solid #7757B2;
+
+}
+footer .main .top-footer .footer-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    text-align: left;
+    justify-items: center;
+}
+footer .main.top-footer .footer-list .logo {
+    width: 100%;
+    text-align: start;
+    padding: 0 0 0 0;
+}
+footer .main  .top-footer .footer-list,
+.logo h1 ,
+.support h1,
+.partners h1,
+.follwo-us h1 {
+    color: #7757B2;
+    font-size: 18px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+footer .main .top-footer .footer-list .logo p {
+    color: #7757B2;
+    margin:  10px 0 0 0;
+    font-size: 13px;
+    font-weight: unset;
+    width: 80%;
+}
+footer .main .top-footer .footer-list .logo .list {
+    list-style: none;
+    margin: 20px 0 40px 0 ;
+    color: #7757B2;
+    display: block;
+}
+footer .main .top-footer .footer-list .logo .list li {
+    margin: 20px 0 0 10px ;
+    color: #7757B2;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #7757B2;
+    border-radius: 5px;
+}
+footer .main  .top-footer .footer-list .logo .list li:hover {
+    background-color: #7757B2   ;
+    color: #7757B2;
+    transition: 0.2s ease;
+}
+footer .main .top-footer .footer-list .support button {
+    width: 150px;
+    height: 40px;
+    margin: 20px 0 0 0;
+    background: none;
+    color: #7757B2;
+    border: 2px solid #7757B2 ;
+    border-radius: 5px;
+    font-size: 15px;
+}
+footer .main  .top-footer .footer-list .support button:hover {
+    background-color: #7757B2;
+    color: white;
+    transition: 0.2s ease;
+    font-weight: bold;
+}
+footer .main  .top-footer .footer-list .partners .list {
+    list-style: none;
+    margin: 20px 0 0 0 ;
+    color: #dcdcdc;
+    border: 2px solid #7757B2 ;
+}
+footer .main  .top-footer .footer-list .partners .list li {
+    margin: 10px 0 0 0 ;
+}
+footer .main  .top-footer .footer-list .follwo-us .list {
+    list-style: none;
+    margin: 20px 0 10px 0 ;
+    color: #7757B2;
+    display: flex;
+}
+footer .main  .top-footer .footer-list .follwo-us .list li   {
+    margin: 0 0 0 10px ;
+    color: #7757B2;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #7757B2 ;
+    border-radius: 5px;
+}
+footer .main  .top-footer .footer-list .follwo-us .list li:hover {
+    background-color: #7757B2;
+    color: white;
+    transition: 0.2s ease;
+}
+footer .main .bot-footer    {
+    width: 100%;
+    height: auto;
+}
+footer .main .bot-footer p {
+    color: #7757B2;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+}

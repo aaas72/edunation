@@ -1,0 +1,120 @@
+* {
+    font-family: "Josefin Sans", serif;
+}
+body {
+    background-image: url("../imgs/body_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.signup-form {
+    width: 60%;
+    min-height: 550px;
+    margin: 60px auto ;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 40% auto;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+
+}
+.signup-form .side-bar {
+    width: 100%;
+    background: #855ac5;
+    border-radius: 5px;
+
+}
+.signup-form .side-bar h2 {
+    color: white;
+    margin: 30px 0 0 40px;
+}
+.signup-form .side-bar p {
+    color: white;
+    margin: 30px 0 0 40px;
+    font-size: 20px;
+    width: 300px;
+}
+.signup-form  form h2 {
+    margin: 0;
+    text-align: center;
+    color: #855ac5;
+    padding:0;
+}
+.signup-form  .signup {
+    text-align: center;
+    color: #7757B2;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 30px;
+}
+.signup-form  form {
+    width: auto;
+    margin: 60px 0 0 0;
+    display: block;
+    border-radius: 5px;
+}
+.signup-form  form input {
+    width: 80%;
+    height: 40px;
+    display: block;
+    background: none;
+    border-radius: 5px;
+    border: 3px solid white;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+    margin: 30px auto 0 auto;
+    padding-left: 10px;
+    font-size: 15px;
+    color: #7757B2;
+    font-weight: bold;
+}
+.signup-form form label .error {
+    display: block;
+    width: auto;
+    margin: 10px 0 0 50px;
+    padding: 0;
+    color: #ff0000;
+    text-align: left;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.signup-form  form input:focus {
+    border: 3px solid #00C72F;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+.signup-form  form .but {
+    width: 30%;
+    height: 40px;
+    background-color: #7757B2;
+    border-style: none;
+    margin: 70px auto 70px auto;
+    font-size: 15px;
+    color: #eeeeee;
+    border-radius: 5px;
+
+}
+.signup-form  form .but:hover {
+    background-color: #00C72F;
+    transition: 0.2s ease;
+}
+
+
+.bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #7757b2 40%, #03b22b 70%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+}
+.bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+}
+.bg3 {
+    animation-duration:5s;
+}
